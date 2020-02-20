@@ -26,6 +26,7 @@ class ApplicationViews extends Component {
             return <Login {...props} />
           }}
         />
+
       </React.Fragment>
     )
   }
