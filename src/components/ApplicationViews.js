@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom"
 import ParkExplorer from "./home/ParkExplorer"
 import Register from "./auth/Register"
 import Login from "./auth/Login"
+import ItineraryForm from '././ItineraryForm'
 
 class ApplicationViews extends Component {
 
@@ -24,6 +25,11 @@ class ApplicationViews extends Component {
         <Route
           path="/login" render={props => {
             return <Login {...props} />
+          }}
+        />
+        <Route
+          path="/myitinerary" render={props => {
+            return <ItineraryForm {...props} />
           }}
         />
 
